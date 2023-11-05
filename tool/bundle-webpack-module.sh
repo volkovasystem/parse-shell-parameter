@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-npm install --no-save webpack-cli;
-
 [[ -f "$MODULE_BUNDLE_SETTING_FILE_PATH" ]] &&	\
-npx --yes webpack build --config "$MODULE_BUNDLE_SETTING_FILE_PATH";
-
-return 0;
+npm install --no-save webpack &&				\
+npm install --no-save webpack-cli &&			\
+npm link webpack &&								\
+npm link webpack-cli &&							\
+webpack build --config "$MODULE_BUNDLE_SETTING_FILE_PATH";
