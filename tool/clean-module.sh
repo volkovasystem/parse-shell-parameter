@@ -9,3 +9,5 @@ mv --force "$MODULE_ROOT_DIRECTORY_PATH/node_modules" "$TRASH_DIRECTORY";
 mv --force "$MODULE_ROOT_DIRECTORY_PATH/package-lock.json" "$TRASH_DIRECTORY";
 
 npm cache clean --force --loglevel=error;
+
+return 0;

@@ -16,3 +16,5 @@ mv --force "$MODULE_PACKAGE_FILE_PATH.backup" "$MODULE_PACKAGE_FILE_PATH";
 [[ -d "$TRASH_DIRECTORY" ]] &&					\
 [[ -f "$MODULE_PACKAGE_LOCK_FILE_PATH" ]] &&	\
 mv --force "$MODULE_PACKAGE_LOCK_FILE_PATH" "$TRASH_DIRECTORY";
+
+return 0;

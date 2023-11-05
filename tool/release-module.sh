@@ -15,3 +15,5 @@ npm run clean-module;
 
 [[ -f "$MODULE_ROOT_DIRECTORY_PATH/tool/reset-context-module.sh" ]] &&	\
 npm run reset-context-module;
+
+return 0;

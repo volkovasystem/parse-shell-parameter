@@ -6,3 +6,5 @@ mv "$MODULE_ROOT_DIRECTORY_PATH/.build/$MODULE_NAMESPACE_VALUE.js" "$MODULE_ROOT
 [[ -d $TRASH_DIRECTORY ]] &&						\
 [[ -d "$MODULE_ROOT_DIRECTORY_PATH/.build" ]] &&	\
 mv --force "$MODULE_ROOT_DIRECTORY_PATH/.build" "$TRASH_DIRECTORY";
+
+return 0;

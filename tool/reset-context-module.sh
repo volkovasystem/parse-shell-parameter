@@ -12,3 +12,5 @@ mv --force "$MODULE_FILE_PATH.backup" "$MODULE_FILE_PATH";
 
 [[ -f "$CONTEXT_MODULE_FILE_PATH.backup" ]] &&	\
 mv --force "$CONTEXT_MODULE_FILE_PATH.backup" "$CONTEXT_MODULE_FILE_PATH";
+
+return 0;
