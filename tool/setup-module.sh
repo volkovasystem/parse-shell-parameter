@@ -3,7 +3,8 @@
 [[ -f "$MODULE_SETUP_LIST_FILE_PATH" ]] &&	\
 cat "$MODULE_SETUP_LIST_FILE_PATH" | xargs -n1 -I {} bash -c "{}";
 
-[[ -f "$MODULE_PACKAGE_FILE_PATH" ]] &&	\
+[[ -f "$MODULE_DEPENDENCY_LIST_FILE_PATH" ]] &&	\
+[[ -f "$MODULE_PACKAGE_FILE_PATH" ]] &&			\
 cp "$MODULE_PACKAGE_FILE_PATH" "$MODULE_PACKAGE_FILE_PATH.backup" || true;
 
 [[ -f "$MODULE_DEPENDENCY_LIST_FILE_PATH" ]] &&	\
