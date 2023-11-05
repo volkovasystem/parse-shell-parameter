@@ -4,15 +4,15 @@ npm run clean-module;
 
 [[ -d "$TRASH_DIRECTORY" ]] &&											\
 [[ -f "$MODULE_ROOT_DIRECTORY_PATH/$MODULE_NAMESPACE_VALUE.js" ]] &&	\
-mv --force "$MODULE_ROOT_DIRECTORY_PATH/$MODULE_NAMESPACE_VALUE.js" "$TRASH_DIRECTORY" || true;
+mv --force "$MODULE_ROOT_DIRECTORY_PATH/$MODULE_NAMESPACE_VALUE.js" "$TRASH_DIRECTORY";
 
 [[ -d "$TRASH_DIRECTORY" ]] &&						\
 [[ -d "$MODULE_ROOT_DIRECTORY_PATH/.build" ]] &&	\
-mv --force "$MODULE_ROOT_DIRECTORY_PATH/.build" "$TRASH_DIRECTORY" || true;
+mv --force "$MODULE_ROOT_DIRECTORY_PATH/.build" "$TRASH_DIRECTORY";
 
 [[ -d "$TRASH_DIRECTORY" ]] &&					\
 [[ -d "$MODULE_ROOT_DIRECTORY_PATH/.test" ]] &&	\
-mv --force "$MODULE_ROOT_DIRECTORY_PATH/.test" "$TRASH_DIRECTORY" || true;
+mv --force "$MODULE_ROOT_DIRECTORY_PATH/.test" "$TRASH_DIRECTORY";
 
 reset-backup( ){
 	local BACKUP_FILE_PATH="$1";
@@ -23,12 +23,12 @@ reset-backup( ){
 
 	[[ -d "$TRASH_DIRECTORY" ]] &&	\
 	[[ -f "$BACKUP_FILE_PATH" ]] &&	\
-	mv --force "$BACKUP_FILE_PATH" "$TRASH_DIRECTORY" || true;
+	mv --force "$BACKUP_FILE_PATH" "$TRASH_DIRECTORY";
 };
 
 export -f reset-backup;
 
-find *.backup -type f 2>/dev/null | xargs -n1 -I {} bash -c 'reset-backup {}' || true;
+find *.backup -type f 2>/dev/null | xargs -n1 -I {} bash -c 'reset-backup {}';
 
 reset-template( ){
 	local TEMPLATE_FILE_PATH="$1";
@@ -40,4 +40,4 @@ reset-template( ){
 
 export -f reset-template;
 
-find *.template -type f 2>/dev/null | xargs -n1 -I {} bash -c 'reset-template {}' || true;
+find *.template -type f 2>/dev/null | xargs -n1 -I {} bash -c 'reset-template {}';
