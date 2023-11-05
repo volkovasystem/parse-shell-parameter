@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-npx --yes @volkovasystem/format-package-json-file;
+npx --ignore-existing --yes @volkovasystem/format-package-json-file;
 
 npm run reset-module &&	\
 npm run setup-module &&	\

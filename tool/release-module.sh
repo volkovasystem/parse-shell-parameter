@@ -3,7 +3,7 @@
 [[ -f "$MODULE_ROOT_DIRECTORY_PATH/tool/transform-context-module.sh" ]] &&	\
 npm run transform-context-module;
 
-npx --yes @volkovasystem/format-package-json-file;
+npx --ignore-existing --yes @volkovasystem/format-package-json-file;
 
 npm run reset-module &&	\
 npm run setup-module &&	\
