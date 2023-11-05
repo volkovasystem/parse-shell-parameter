@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+npm cache clean --force --loglevel=error;
+
 [[ -f "$MODULE_ROOT_DIRECTORY_PATH/tool/transform-context-module.sh" ]] &&	\
 npm run transform-context-module;
 
