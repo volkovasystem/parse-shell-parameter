@@ -1,12 +1,32 @@
 #	CHANGELOG
 
+##	2023-11-14/0.0.1
+
+###	UNRELEASED
+- undefined
+
+###	ADDED
+- undefined
+
+###	MODIFIED
+- Improved build procedure.
+
+###	DEPRECATED
+- undefined
+
+###	REMOVED
+- undefined
+
+###	SECURITY
+- undefined
+
 ##	2023-11-06/0.0.0
 
 ###	UNRELEASED
 - undefined
 
 ###	ADDED
-- - Finalized implementation for parse shell parameter utility procedure.
+- Finalized implementation for parse shell parameter utility procedure.
 
 ###	MODIFIED
 - undefined

@@ -5,6 +5,7 @@
 	"description": "Parse shell parameter.",
 	"main": "parse-shell-parameter.js",
 	"scripts": {
+		"set-module-template": "source ./setting/default-tool-setting.sh && source ./tool/set-module-template.sh",
 		"transform-context-module": "source ./setting/default-tool-setting.sh && source ./tool/transform-context-module.sh",
 		"reset-context-module": "source ./setting/default-tool-setting.sh && source ./tool/reset-context-module.sh",
 		"check-module": "source ./setting/default-tool-setting.sh && source ./tool/check-module.sh",
