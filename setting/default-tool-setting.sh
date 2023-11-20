@@ -18,8 +18,8 @@ export MODULE_SETUP_LIST_FILE_PATH="$MODULE_ROOT_DIRECTORY_PATH/setting/setup.li
 export MODULE_DEPENDENCY_LIST_FILE_PATH="$MODULE_ROOT_DIRECTORY_PATH/setting/dependency.list";
 
 export MODULE_ORGANIZATION="volkovasystem";
-export MODULE_NAMESPACE_VALUE="format-json-file";
-export MODULE_NAMESPACE_VARIABLE="formatJSONFile";
+export MODULE_NAMESPACE_VALUE="parse-shell-module";
+export MODULE_NAMESPACE_VARIABLE="parseShellModule";
 
 export MODULE_BUILD_TARGET_LIST="node";
 
